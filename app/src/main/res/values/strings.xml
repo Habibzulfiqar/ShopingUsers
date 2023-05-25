@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShopingUsers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="checkout_with_googlepay_button_content_description">Checkout With Google Pay</string>
+    <string name="publishableKey">pk_test_51MKq1MAtdfrePVOpVOJzCZNc4AqFQ32Yp4qrJCBlhgsrS7Unur0TpHwl9zHm26NiwHNuUkC7clzXmFQw9nLCq7hf00aorgD5Ch</string>
+    <string name="secretKey">sk_test_51MKq1MAtdfrePVOpRyGPPtasbGssnVVO3dlimSeAqzchnlsMnnN0MdMVDJhHfF98B0cNVuNG91i3gMjDxwZ6AX4W00fHiexW5i</string>
+
+    <string-array name="Prices">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+</resources>

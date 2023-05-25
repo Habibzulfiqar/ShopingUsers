@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProductFragment">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_45sdp"
+       android:id="@+id/firstts"
+       android:layout_margin="@dimen/_10sdp"
+       android:background="@drawable/search_tf">
+
+
+      <ImageView
+          android:layout_width="@dimen/_15sdp"
+          android:layout_height="@dimen/_15sdp"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/_8sdp"
+          android:id="@+id/search"
+          android:src="@drawable/search_icon"/>
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/searchHere"
+          android:layout_toLeftOf="@+id/filtersImage"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:layout_toRightOf="@+id/search"
+          android:background="@android:color/transparent"
+          android:hint="Search here" />
+      <ImageView
+          android:layout_width="@dimen/_30sdp"
+          android:layout_height="@dimen/_30sdp"
+         android:src="@drawable/filters"
+          android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:id="@+id/filtersImage"/>
+
+   </RelativeLayout>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/firstts"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:layout_marginBottom="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:id="@+id/categoriesRecycler"/>
+
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:layout_below="@+id/categoriesRecycler"
+       android:layout_marginBottom="@dimen/_10sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:id="@+id/exclusiveRecycler"/>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:id="@+id/filters"
+       android:visibility="gone"
+       android:layout_height="match_parent">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         android:background="@color/black"
+         android:alpha="0.8"/>
+
+      <ImageView
+          android:layout_width="@dimen/_30sdp"
+          android:layout_height="@dimen/_30sdp"
+         android:src="@drawable/cross_image"
+         app:tint="@color/white"
+          android:id="@+id/closeImages"
+         android:layout_margin="@dimen/_10sdp"
+         android:layout_alignParentRight="true"/>
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_centerVertical="true"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:orientation="vertical"
+             android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:text="Filter"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:textSize="@dimen/_16sdp"
+               android:layout_marginTop="@dimen/_20sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:text="Product View:"
+                android:visibility="gone"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_10sdp"
+               android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:visibility="gone"
+               android:entries="@array/Prices"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:id="@+id/ascendingDescending"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price wise:"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:entries="@array/Prices"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/priceWise"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:text="Apply"
+               android:background="@drawable/gredient_color"
+               android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+               android:id="@+id/apply"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/gredient_color"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:id="@+id/clear"/>
+
+
+         </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+
+   </RelativeLayout>
+</RelativeLayout>

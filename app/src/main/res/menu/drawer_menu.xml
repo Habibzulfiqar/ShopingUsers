@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="Products" />
+
+
+
+
+
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/cartt"
+            android:title="Cart" />
+
+        <item
+            android:id="@+id/viewCategories"
+            android:icon="@drawable/view_product"
+            android:title="View Categories" />
+
+        <item
+            android:id="@+id/runningorders"
+            android:icon="@drawable/view_product"
+            android:title="View Running Orders" />
+
+        <item
+            android:id="@+id/allOrders"
+            android:icon="@drawable/add"
+            android:title="All Orders" />
+
+
+
+
+
+        <item
+            android:id="@+id/cancelledOrders"
+            android:icon="@drawable/view_product"
+            android:title="view Cancelled Orders" />
+
+    </group>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <group
+        android:id="@+id/menu_topbel"
+        android:checkableBehavior="none">
+
+
+
+        <item android:id="@+id/feedback"
+            android:icon="@drawable/settings"
+            android:title="Feedback"/>
+
+        <item android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="Settings"/>
+
+        <item android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+    </group>
+</menu>
